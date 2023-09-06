@@ -111,6 +111,6 @@ header {
     top: 10px;
 }
 
-.second-image {
-
+strong {
+    display: block;
 }
