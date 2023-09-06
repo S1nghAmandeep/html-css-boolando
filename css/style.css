@@ -9,6 +9,13 @@
     margin: 0 auto;
 }
 
+img {
+    max-width: 100%;
+}
+
+.row > [class^='col--'] {
+	padding: 20px;
+}
 
 /* Barra Navigazione */
 
@@ -30,7 +37,7 @@ header {
     align-items: center;
 }
 
-.col-2 {
+.col-4 {
 	flex-basis: calc((100% / 12) * 4);
 	/* flex-basis: calc((100% * 2) / 12); */
     border: 1px dashed black;
@@ -39,4 +46,71 @@ header {
 .boolean-logo {
     max-width: 50%;
     margin-left: 60px;
+}
+
+/* card immagine 1 */
+
+.col--4 {
+	flex-basis: calc((100% / 12) * 4);
+    border: 1px dashed black;
+}
+
+.top-image {
+    position: absolute;
+    opacity: 0;
+}
+
+.card-1:hover .top-image {
+	opacity: 1;
+}
+
+.card-1 {
+    position: relative;
+}
+
+.brand {
+    color: rgb(146, 146, 146);
+}
+
+.price {
+    color: red;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.discount {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+}
+
+.sustainable {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    position: absolute;
+    left: 60px;
+    bottom: 100px;
+}
+
+.heart {
+    padding: 5px 14px;
+    font-size: 30px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.second-image {
+
 }
