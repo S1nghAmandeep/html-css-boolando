@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -20,9 +23,13 @@ img {
 /* Barra Navigazione */
 
 header {
-    background-color: orange;
-    height: 50px;
+    background-color: #ff6900;
+    height: 60px;
     width: 100%;
+    position: sticky;
+    padding-bottom: 50px;
+    z-index: 2000;
+    top: 0;
 }
 
 
@@ -32,7 +39,7 @@ header {
 }
 
 .nav-row {
-    /* justify-content: space-between; */
+    justify-content: space-between;
     padding: 10px;
     align-items: center;
 }
@@ -40,19 +47,37 @@ header {
 .col-4 {
 	flex-basis: calc((100% / 12) * 4);
 	/* flex-basis: calc((100% * 2) / 12); */
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
+
+ul li {
+    list-style: none;
+    display: inline;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
 
 .boolean-logo {
     max-width: 50%;
-    margin-left: 60px;
+    margin: 3px 0 0 60px;
 }
+
+.header-icon {
+    /* margin: 7px 0 0 214px; */
+    align-items: right;
+}
+
+/* main {
+    padding: 60px 0 20px 0;
+} */
 
 /* card immagine 1 */
 
 .col--4 {
 	flex-basis: calc((100% / 12) * 4);
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .top-image {
@@ -117,4 +142,40 @@ strong {
 
 .sustainable.six {
     left: 0px;
+}
+
+/* sezione footer */
+
+footer {
+    background-color: #1a1a1a;
+    height: 110px;
+    width: 100%;
+    position: sticky;
+    z-index: 2000;
+    bottom: 0;
+}
+
+.footer-row {
+    justify-content: space-between;
+}
+
+.col-6 {
+	flex-basis: calc((100% / 12) * 6);
+	/* flex-basis: calc((100% * 2) / 12); */
+    /* border: 1px dashed black; */
+}
+
+.footer-border {
+    padding-top: 20px;
+}
+
+.footer-text {
+    color: white;
+    line-height: 25px;
+}
+
+.footer-text-2 {
+    color: white;
+    line-height: 25px;
+    text-align: right;
 }
