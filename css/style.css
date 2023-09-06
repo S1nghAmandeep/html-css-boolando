@@ -3,3 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* Barra Navigazione */
+
+header {
+    background-color: orange;
+    height: 50px;
+    width: 100%;
+}
+
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav-row {
+    /* justify-content: space-between; */
+    padding: 10px;
+    align-items: center;
+}
+
+.col-2 {
+	flex-basis: calc((100% / 12) * 4);
+	/* flex-basis: calc((100% * 2) / 12); */
+    border: 1px dashed black;
+}
+
+.boolean-logo {
+    max-width: 50%;
+    margin-left: 60px;
+}
